@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет по анализу договора - test.txt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            color: #00BFFF;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #888;
+            font-size: 14px;
+        }
+        .risk-badge {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #22c55e;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3);
+        }
+        .section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .section h2 {
+            color: #00BFFF;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00BFFF;
+            padding-bottom: 10px;
+        }
+        .item {
+            background: #252525;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #00BFFF;
+        }
+        .item-title {
+            color: #00BFFF;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .item-content {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .missing-item {
+            color: #ef4444;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #2a1a1a;
+            border-radius: 6px;
+            border-left: 4px solid #ef4444;
+        }
+        .ai-section {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2a1a3a 100%);
+            border: 1px solid #00BFFF;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 LawAssistant - Отчет по анализу</h1>
+            <p>Файл: test.txt</p>
+            <div class="risk-badge">Уровень риска: LOW</div>
+        </div>
+        
+        <div class="section">
+            <h2>⚠️ Опасные фразы (1)</h2>
+            <div class="item">
+            <div class="item-title">штраф</div>
+            <div class="item-content">Контекст: ...000 рублей
+Срок: 2025 год
+Ответственность сторон: штраф 10%
+Порядок разрешения споров: суд
+Реквизиты: ООО...</div>
+        </div>
+        </div>
+        
+        <div class="section">
+            <h2>📝 Отсутствующие разделы (1)</h2>
+            <div class="missing-item">❌ реквизиты сторон</div>
+        </div>
+        
+        <div class="section ai-section">
+        <h2>🤖 AI-анализ договора</h2>
+        <div class="item-content" style="white-space: pre-wrap;">AI анализ временно отключен для тестирования</div>
+    </div>
+        
+        <div class="timestamp">
+            Отчет создан: 23.11.2025 12:51:53
+        </div>
+    </div>
+</body>
+</html>

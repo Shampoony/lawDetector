@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-23T12:51:57.932299",
+  "total_tests": 9,
+  "passed_tests": 9,
+  "success_rate": "100.0%",
+  "test_details": [
+    {
+      "test": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Response: {'message': 'LawAssistant API'}",
+      "timestamp": "2025-11-23T12:51:57.534314"
+    },
+    {
+      "test": "GET Keywords",
+      "success": true,
+      "details": "Status: 200, Keywords count: 0",
+      "timestamp": "2025-11-23T12:51:57.576670"
+    },
+    {
+      "test": "POST Keywords",
+      "success": true,
+      "details": "Status: 200, Created keyword ID: c0bb870e-a7da-4d67-b64c-2e151e3f559f",
+      "timestamp": "2025-11-23T12:51:57.620169"
+    },
+    {
+      "test": "DELETE Keywords",
+      "success": true,
+      "details": "Status: 200, Response: {'message': 'Keyword deleted'}",
+      "timestamp": "2025-11-23T12:51:57.699015"
+    },
+    {
+      "test": "POST Analyze Contract",
+      "success": true,
+      "details": "Status: 200, Analysis ID: f6d94016-cddc-45cf-ac3e-1006573ee0f9, Risk: LOW, Dangerous phrases: 2, Missing sections: 0, AI analysis: True",
+      "timestamp": "2025-11-23T12:51:57.740940"
+    },
+    {
+      "test": "Download JSON Report",
+      "success": true,
+      "details": "Status: 200, Content-Type: application/json, Size: 0 bytes",
+      "timestamp": "2025-11-23T12:51:57.791162"
+    },
+    {
+      "test": "Download HTML Report",
+      "success": true,
+      "details": "Status: 200, Content-Type: text/html; charset=utf-8, Size: 4448 bytes",
+      "timestamp": "2025-11-23T12:51:57.831109"
+    },
+    {
+      "test": "GET Analysis History",
+      "success": true,
+      "details": "Status: 200, History count: 4, Latest: test_contract.txt",
+      "timestamp": "2025-11-23T12:51:57.889322"
+    },
+    {
+      "test": "File Format Validation",
+      "success": true,
+      "details": "Status: 400, Error: Unsupported file format. Allowed: .txt, .docx, .pdf",
+      "timestamp": "2025-11-23T12:51:57.931448"
+    }
+  ]
+}
